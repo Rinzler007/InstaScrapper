@@ -1,7 +1,7 @@
 import instaloader
 import numpy as np
 
-class InstagramScraper:
+class InstagramScrapper:
 
     def __init__(self, username, password):
         
