@@ -1,4 +1,4 @@
-from insta_scraper import InstagramScraper
+from insta_scrapper import InstagramScrapper
 import argparse
 import logging
 import os
@@ -12,7 +12,7 @@ def main():
 	parser.add_argument('--password', dest='password', action='store')
 	args = parser.parse_args()
 
-	scrapper = InstagramScraper(args.username, args.password)
+	scrapper = InstagramScrapper(args.username, args.password)
 	logging.info("Creating session")
 	scrapper.create_session()
 
